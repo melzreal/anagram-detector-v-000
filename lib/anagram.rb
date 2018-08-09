@@ -11,7 +11,7 @@ attr_accessor :word
     #split the word array into individual words
     #then sort them and check if any sorted words match class word sorted
     # if a in word_array.split.sort == self.word return a
-    word_array.select{|a| a.split("").sort == @word.split("").sort }
+    word_array.map{|a| a.split("").sort == @word.split("").sort }
 
     end
 
